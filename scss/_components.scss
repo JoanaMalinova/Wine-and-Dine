@@ -1,5 +1,11 @@
-.header {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba($color-black, .6), rgba($color-black, .4)), url(../images/fancy-restaurant.jpg) no-repeat center / cover;
+.logo {
+    color: $color-primery;
+    border: 2px solid $color-primery;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    width: 88px;
+    font-size: 50px;   
+    border-radius: 50%;
 }

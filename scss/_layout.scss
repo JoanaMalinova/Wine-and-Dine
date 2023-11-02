@@ -1,3 +1,21 @@
-body{
-   
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(
+            rgba($color-black, 0.6),
+            rgba($color-black, 0.4)
+        ),
+        url(../images/fancy-restaurant.jpg) no-repeat center / cover;
+
+    .brand {
+        position: absolute;
+        top: 20%;
+        left: 50%;      
+        transform: translatex(-50%);
+        color: $color-primery;
+        .main-name{
+            font-size: 60px;
+        }
+    }
 }
