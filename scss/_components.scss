@@ -1,9 +1,8 @@
 .logo {
     color: $color-primery;
     border: 2px solid $color-primery;   
-    height: 110px;
-    width: 110px;
-    font-size: 60px;   
+    height: 80px;
+    width: 80px;   
     border-radius: 50%;
     @include flexLayout; 
     background-color: $color-tertiery;   
@@ -14,26 +13,33 @@
 }
 
 .main-name {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     font-family: $font-raleway;
     @include logoTextStyle;
 }
 
 .sub-name {
-    font-size: 28px;
+    font-size: 20px;
     font-family: $font-poppins;
     @include logoTextStyle;
 }
 
 .main-heading{
     font-family: $font-great-vibes;
-    font-size: 70px;
-    color: $color-secondery;   
+    font-size: 84px;
+    color: $color-secondery; 
+    font-weight: 200;  
+    text-align: center;
 }
 
 .sub-heading{
     font-family: $font-poppins;
-    font-size: 20px;
-    color: $color-primary;   
+    font-size: 32px;
+    font-weight: 200;
+    color: $color-secondery;
+    text-align: center;
+    word-spacing: 6px ;
+    // font-style: italic;
 }
+

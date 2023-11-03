@@ -13,12 +13,10 @@
         color: $color-primery;
         display: flex;
         flex-direction: column;
-        align-items: center;
-
-        
+        align-items: center;        
     }
 
     &-banner{
-        @include centerPosition(50%);
+        @include centerPosition(40%);
     }
 }

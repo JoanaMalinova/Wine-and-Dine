@@ -10,9 +10,8 @@ body {
 .logo {
   color: #fde3e9;
   border: 2px solid #fde3e9;
-  height: 110px;
-  width: 110px;
-  font-size: 60px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -25,7 +24,7 @@ body {
 }
 
 .main-name {
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
@@ -34,7 +33,7 @@ body {
 }
 
 .sub-name {
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   letter-spacing: 2px;
@@ -43,14 +42,19 @@ body {
 
 .main-heading {
   font-family: "Great Vibes", cursive;
-  font-size: 70px;
+  font-size: 84px;
   color: #dddad1;
+  font-weight: 200;
+  text-align: center;
 }
 
 .sub-heading {
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
+  font-size: 32px;
+  font-weight: 200;
   color: #dddad1;
+  text-align: center;
+  word-spacing: 6px;
 }
 
 .header {
@@ -71,7 +75,7 @@ body {
 }
 .header-banner {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translatex(-50%);
 }/*# sourceMappingURL=main.css.map */
