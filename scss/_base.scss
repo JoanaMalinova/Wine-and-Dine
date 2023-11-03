@@ -1,6 +1,22 @@
 $color-dark: #262626;
 $color-black: #000;
-$color-primery:#fde3e9;
+$color-primery: #fde3e9;
+$color-tertiery:#f8f6f4;
+$color-secondery: #dddad1;
+$font-raleway: "Raleway", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin logoTextStyle {
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: $color-primery;
+}
 
 * {
     margin: 0;

@@ -10,13 +10,18 @@ body {
 .logo {
   color: #fde3e9;
   border: 2px solid #fde3e9;
+  height: 110px;
+  width: 110px;
+  font-size: 60px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 88px;
-  width: 88px;
-  font-size: 50px;
-  border-radius: 50%;
+  background-color: #f8f6f4;
+}
+.logo > img {
+  height: 70%;
+  width: 70%;
 }
 
 .header {
@@ -31,7 +36,22 @@ body {
   left: 50%;
   transform: translatex(-50%);
   color: #fde3e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header .brand .main-name {
   font-size: 60px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #fde3e9;
+}
+.header .brand .sub-name {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #fde3e9;
 }/*# sourceMappingURL=main.css.map */

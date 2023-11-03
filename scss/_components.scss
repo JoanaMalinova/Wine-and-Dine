@@ -1,11 +1,14 @@
 .logo {
     color: $color-primery;
-    border: 2px solid $color-primery;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 88px;
-    width: 88px;
-    font-size: 50px;   
+    border: 2px solid $color-primery;   
+    height: 110px;
+    width: 110px;
+    font-size: 60px;   
     border-radius: 50%;
+    @include flexLayout; 
+    background-color: $color-tertiery;   
+    >img{
+        height: 70%;
+        width: 70%;        
+    }
 }

@@ -11,11 +11,24 @@
     .brand {
         position: absolute;
         top: 20%;
-        left: 50%;      
+        left: 50%;
         transform: translatex(-50%);
         color: $color-primery;
-        .main-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main-name {
             font-size: 60px;
+            text-align: center;
+            font-family: $font-raleway;
+            @include logoTextStyle;
+        }
+
+        .sub-name {
+            font-size: 28px;
+            font-family: $font-poppins;
+            @include logoTextStyle;
         }
     }
 }
