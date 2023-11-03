@@ -9,26 +9,16 @@
         url(../images/fancy-restaurant.jpg) no-repeat center / cover;
 
     .brand {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translatex(-50%);
+       @include centerPosition(10%);
         color: $color-primery;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .main-name {
-            font-size: 60px;
-            text-align: center;
-            font-family: $font-raleway;
-            @include logoTextStyle;
-        }
+        
+    }
 
-        .sub-name {
-            font-size: 28px;
-            font-family: $font-poppins;
-            @include logoTextStyle;
-        }
+    &-banner{
+        @include centerPosition(50%);
     }
 }

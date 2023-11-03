@@ -12,3 +12,28 @@
         width: 70%;        
     }
 }
+
+.main-name {
+    font-size: 60px;
+    text-align: center;
+    font-family: $font-raleway;
+    @include logoTextStyle;
+}
+
+.sub-name {
+    font-size: 28px;
+    font-family: $font-poppins;
+    @include logoTextStyle;
+}
+
+.main-heading{
+    font-family: $font-great-vibes;
+    font-size: 70px;
+    color: $color-secondery;   
+}
+
+.sub-heading{
+    font-family: $font-poppins;
+    font-size: 20px;
+    color: $color-primary;   
+}

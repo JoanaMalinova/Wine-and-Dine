@@ -5,6 +5,7 @@ $color-tertiery:#f8f6f4;
 $color-secondery: #dddad1;
 $font-raleway: "Raleway", sans-serif;
 $font-poppins: "Poppins", sans-serif;
+$font-great-vibes:'Great Vibes', cursive;
 
 @mixin flexLayout {
     display: flex;
@@ -16,6 +17,13 @@ $font-poppins: "Poppins", sans-serif;
     font-weight: 200;
     letter-spacing: 2px;
     color: $color-primery;
+}
+
+@mixin centerPosition($topValue){
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 * {
