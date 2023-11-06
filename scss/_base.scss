@@ -34,6 +34,11 @@ $font-great-vibes:'Great Vibes', cursive;
         url($picUrl) no-repeat center / cover;
 }
 
+%fullspace{
+    width: 100%;
+    height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -53,7 +53,7 @@
     font-weight: 300;
     letter-spacing: 2px;
     padding: 10px 18px;
-    transition: all 0.4s;   
+    transition: all 0.4s;
     cursor: pointer;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -61,11 +61,62 @@
 
     &:hover {
         background-color: $color-primery;
-        color: $color-dark;       
-    }   
+        color: $color-dark;
+    }
 }
 
-.decorative-line{
+.decorative-line {
     height: 40px;
     margin-top: -10px;
+}
+
+.card {
+    width: 33.3333%;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+
+    &-info {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: 1;
+        background-color: $color-primery;
+        opacity: 0.7;
+        @extend %fullSpace;
+        @include flexLayout;
+        flex-direction: column;
+        color: $color-dark;
+
+        &-heading {
+            font-family: $font-raleway;
+            font-size: 30px;
+            width: 60%;
+            text-align: center;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 22px;
+            font-family: $font-poppins;
+            
+        }
+    }
+
+    &-image {
+        @extend %fullSpace;
+        object-fit: cover;
+
+        img {
+            @extend %fullSpace;
+
+            opacity: 0.6;
+        }
+    }
+
+    // &:hover{
+    //     .card-info{
+    //         left:0
+    //     }
+    // }
 }
