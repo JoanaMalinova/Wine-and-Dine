@@ -78,15 +78,16 @@
 
     &-info {
         position: absolute;
-        top: 0;
-        left: -100%;
+        top: 0;  
+        left: -100%;     
         z-index: 1;
         background-color: $color-primery;
         opacity: 0.7;
         @extend %fullSpace;
         @include flexLayout;
         flex-direction: column;
-        color: $color-dark;
+        color: $color-dark; 
+        transition: all 1s;      
 
         &-heading {
             font-family: $font-raleway;
@@ -94,12 +95,12 @@
             width: 60%;
             text-align: center;
             font-style: italic;
+            font-weight: 400;
         }
 
         p {
             font-size: 22px;
-            font-family: $font-poppins;
-            
+            font-family: $font-poppins;            
         }
     }
 
@@ -109,14 +110,14 @@
 
         img {
             @extend %fullSpace;
-
+            object-fit: cover;
             opacity: 0.6;
         }
     }
 
-    // &:hover{
-    //     .card-info{
-    //         left:0
-    //     }
-    // }
+    &:hover{
+        .card-info{
+            left:0;
+        }
+    }
 }
