@@ -26,6 +26,14 @@ $font-great-vibes:'Great Vibes', cursive;
     transform: translatex(-50%);
 }
 
+@mixin backroundPic($picUrl){
+    background: linear-gradient(
+            rgba($color-black, 0.6),
+            rgba($color-black, 0.4)
+        ),
+        url($picUrl) no-repeat center / cover;
+}
+
 * {
     margin: 0;
     padding: 0;
