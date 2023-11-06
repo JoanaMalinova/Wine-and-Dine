@@ -57,6 +57,26 @@ body {
   word-spacing: 6px;
 }
 
+.main-btn {
+  color: #fde3e9;
+  background-color: transparent;
+  border: 1px solid #fde3e9;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 10px 14px;
+  transition: all 0.4s;
+  cursor: pointer;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.main-btn:hover {
+  background-color: #fde3e9;
+  color: #262626;
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -78,4 +98,9 @@ body {
   top: 40%;
   left: 50%;
   transform: translatex(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,14 +1,14 @@
 .logo {
     color: $color-primery;
-    border: 2px solid $color-primery;   
+    border: 2px solid $color-primery;
     height: 80px;
-    width: 80px;   
+    width: 80px;
     border-radius: 50%;
-    @include flexLayout; 
-    background-color: $color-tertiery;   
-    >img{
+    @include flexLayout;
+    background-color: $color-tertiery;
+    > img {
         height: 70%;
-        width: 70%;        
+        width: 70%;
     }
 }
 
@@ -25,21 +25,40 @@
     @include logoTextStyle;
 }
 
-.main-heading{
+.main-heading {
     font-family: $font-great-vibes;
     font-size: 84px;
-    color: $color-secondery; 
-    font-weight: 200;  
-    text-align: center;
+    color: $color-secondery;
+    font-weight: 200;
+    text-align: center;   
 }
 
-.sub-heading{
+.sub-heading {
     font-family: $font-poppins;
     font-size: 32px;
     font-weight: 200;
     color: $color-secondery;
     text-align: center;
-    word-spacing: 6px ;
-    // font-style: italic;
+    word-spacing: 6px;
 }
 
+.main-btn {
+    color: $color-primery;
+    background-color: transparent;
+    border: 1px solid $color-primery;
+    font-family: $font-poppins;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px 14px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &:hover {
+        background-color: $color-primery;
+        color: $color-dark;
+    }
+}

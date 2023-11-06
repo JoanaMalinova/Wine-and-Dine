@@ -9,7 +9,7 @@
         url(../images/fancy-restaurant.jpg) no-repeat center / cover;
 
     .brand {
-       @include centerPosition(10%);
+       @include centerPosition(10%);      
         color: $color-primery;
         display: flex;
         flex-direction: column;
@@ -18,5 +18,8 @@
 
     &-banner{
         @include centerPosition(40%);
+        @include flexLayout;
+        flex-direction: column;
+        gap: 40px;
     }
 }
