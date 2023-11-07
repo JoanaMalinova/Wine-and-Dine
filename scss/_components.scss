@@ -1,21 +1,20 @@
-.hamburger-menu{
+.hamburger-menu {
     height: 40px;
     width: 40px;
     position: fixed;
     top: 10%;
     right: 5%;
     z-index: 5;
-    transition: all .5s;
+    transition: all 0.5s;
 
-    .menu{
+    .menu {
         @extend %fullSpace;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         cursor: pointer;
-      
 
-        &-line{
+        &-line {
             height: 3px;
             width: 100%;
             background-color: $color-primery;
@@ -34,6 +33,11 @@
     border-radius: 50%;
     @include flexLayout;
     background-color: $color-tertiery;
+    @media (max-width: 1000px) {
+        height: 60px;
+        width: 60px;
+    }
+
     > img {
         height: 70%;
         width: 70%;
@@ -45,12 +49,20 @@
     text-align: center;
     font-family: $font-raleway;
     @include logoTextStyle;
+
+    @media (max-width: 1000px) {
+        font-size: 32px;
+    }
 }
 
 .sub-name {
     font-size: 20px;
     font-family: $font-poppins;
     @include logoTextStyle;
+
+    @media (max-width: 1000px) {
+        font-size: 16px;
+    }
 }
 
 .main-heading {
@@ -59,6 +71,10 @@
     color: $color-secondery;
     font-weight: 200;
     text-align: center;
+
+    @media (max-width: 1000px) {
+        font-size: 70px;
+    }
 }
 
 .sub-heading {
@@ -69,6 +85,9 @@
     text-align: center;
     word-spacing: 6px;
     font-style: italic;
+    @media (max-width: 1000px) {
+        font-size: 26px;
+    }
 }
 
 .main-btn {
@@ -81,11 +100,15 @@
     font-weight: 300;
     letter-spacing: 2px;
     padding: 10px 18px;
-    transition: all 0.4s;
+    transition: all 0.7s;
     cursor: pointer;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     position: relative;
+
+    @media (max-width: 1000px) {
+        font-size: 14px;
+    }
 
     &:hover {
         background-color: $color-primery;
@@ -96,6 +119,10 @@
 .decorative-line {
     height: 40px;
     margin-top: -10px;
+
+    @media (max-width: 1000px) {
+        height: 30px;
+    }
 }
 
 .card {
@@ -106,16 +133,16 @@
 
     &-info {
         position: absolute;
-        top: 0;  
-        left: -100%;     
+        top: 0;
+        left: -100%;
         z-index: 1;
         background-color: $color-primery;
         opacity: 0.7;
         @extend %fullSpace;
         @include flexLayout;
         flex-direction: column;
-        color: $color-dark; 
-        transition: all 1s;      
+        color: $color-dark;
+        transition: all 1s;
 
         &-heading {
             font-family: $font-raleway;
@@ -128,7 +155,7 @@
 
         p {
             font-size: 22px;
-            font-family: $font-poppins;            
+            font-family: $font-poppins;           
         }
     }
 
@@ -143,9 +170,9 @@
         }
     }
 
-    &:hover{
-        .card-info{
-            left:0;
+    &:hover {
+        .card-info {
+            left: 0;
         }
     }
 }

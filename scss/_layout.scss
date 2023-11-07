@@ -140,6 +140,10 @@
             font-family: $font-raleway;
             font-style: italic;
             color: $color-primery;
+            @media (max-width: 1000px) {
+                font-size: 15px;
+                width: 90%;
+            }
         }
     }
 }
