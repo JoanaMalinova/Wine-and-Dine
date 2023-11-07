@@ -8,6 +8,11 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 body {
   background-color: #262626;
 }
@@ -191,4 +196,38 @@ body {
 .gallery .card-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0 20px;
+  gap: 50px;
+}
+.footer .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer .media-list-item i {
+  color: #dddad1;
+  font-size: 40px;
+  transition: all 0.7s;
+}
+.footer .media-list-item i:hover {
+  color: #fde3e9;
+}
+.footer .copyright {
+  color: #dddad1;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
 }/*# sourceMappingURL=main.css.map */
