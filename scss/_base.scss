@@ -1,11 +1,12 @@
 $color-dark: #262626;
+$color-dark2: #1f1b1b;
 $color-black: #000;
 $color-primery: #fde3e9;
-$color-tertiery:#f8f6f4;
+$color-tertiery: #f8f6f4;
 $color-secondery: #dddad1;
 $font-raleway: "Raleway", sans-serif;
 $font-poppins: "Poppins", sans-serif;
-$font-great-vibes:'Great Vibes', cursive;
+$font-great-vibes: "Great Vibes", cursive;
 
 @mixin flexLayout {
     display: flex;
@@ -19,14 +20,14 @@ $font-great-vibes:'Great Vibes', cursive;
     color: $color-primery;
 }
 
-@mixin centerPosition($topValue){
+@mixin centerPosition($topValue) {
     position: absolute;
     top: $topValue;
     left: 50%;
     transform: translatex(-50%);
 }
 
-@mixin backroundPic($picUrl){
+@mixin backroundPic($picUrl) {
     background: linear-gradient(
             rgba($color-black, 0.6),
             rgba($color-black, 0.4)
@@ -34,33 +35,31 @@ $font-great-vibes:'Great Vibes', cursive;
         url($picUrl) no-repeat center / cover;
 }
 
-@mixin navbarStyle{
+@mixin navbarStyle($color: $color-dark) {
     position: fixed;
     height: 100vh;
     width: 50%;
-    background-color: $color-dark;    
+    background-color: $color;
     top: 0;
     z-index: 2;
 }
 
-%fullSpace{
+%fullSpace {
     width: 100%;
     height: 100%;
 }
 
-
 * {
     margin: 0;
     padding: 0;
-
 }
 
-ul{
+ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 

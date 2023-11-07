@@ -4,7 +4,8 @@
 
         &-left {
             @include navbarStyle;
-            left: 0;
+            left: -50%;
+            transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 
             img {
                 width: 56%;
@@ -15,7 +16,7 @@
                 box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
                 -webkit-box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
                 -moz-box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
-                opacity: .8;              
+                opacity: 0.8;
 
                 &.img-1 {
                     object-fit: fill;
@@ -37,9 +38,10 @@
         }
 
         &-right {
-            @include navbarStyle;
+            @include navbarStyle($color-dark2);
             @include flexLayout;
-            right: 0;
+            right: -50%;
+            transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 
             .nav-list {
                 @include flexLayout;
@@ -52,6 +54,7 @@
                         font-family: $font-great-vibes;
                         letter-spacing: 2px;
                         transition: all 0.7s;
+                        opacity: 0.8;
 
                         &:hover {
                             letter-spacing: 5px;
@@ -62,6 +65,30 @@
             }
         }
     }
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+    left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+    right: 0;
+}
+
+.checkbox:checked + .hamburger-menu {
+    transform: rotate(90deg);
+}
+
+.checkbox:checked + .hamburger-menu .menu-line-1 {
+    transform: rotate(-42deg);
+}
+
+.checkbox:checked + .hamburger-menu .menu-line-2 {
+   opacity: 0;
+}
+
+.checkbox:checked + .hamburger-menu .menu-line-3 {
+   transform: rotate(42deg);
 }
 
 .header {
