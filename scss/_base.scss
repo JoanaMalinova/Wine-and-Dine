@@ -34,6 +34,15 @@ $font-great-vibes:'Great Vibes', cursive;
         url($picUrl) no-repeat center / cover;
 }
 
+@mixin navbarStyle{
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    background-color: $color-dark;    
+    top: 0;
+    z-index: 2;
+}
+
 %fullSpace{
     width: 100%;
     height: 100%;
@@ -49,6 +58,10 @@ $font-great-vibes:'Great Vibes', cursive;
 ul{
     list-style-type: none;
     padding-left: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 body {

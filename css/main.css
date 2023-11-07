@@ -13,6 +13,10 @@ ul {
   padding-left: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #262626;
 }
@@ -135,6 +139,74 @@ body {
 }
 .card:hover .card-info {
   left: 0;
+}
+
+.navbar-navigation {
+  display: flex;
+}
+.navbar-navigation-left {
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  background-color: #262626;
+  top: 0;
+  z-index: 2;
+  left: 0;
+}
+.navbar-navigation-left img {
+  width: 56%;
+  height: 16vw;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
+  opacity: 0.8;
+}
+.navbar-navigation-left img.img-1 {
+  object-fit: fill;
+  top: 15%;
+  left: 10%;
+}
+.navbar-navigation-left img.img-2 {
+  object-position: 50% 90%;
+  top: 35%;
+  left: 20%;
+}
+.navbar-navigation-left img.img-3 {
+  top: 55%;
+  left: 30%;
+}
+.navbar-navigation-right {
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  background-color: #262626;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+}
+.navbar-navigation-right .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.navbar-navigation-right .nav-list-item a {
+  color: #dddad1;
+  font-size: 38px;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 2px;
+  transition: all 0.7s;
+}
+.navbar-navigation-right .nav-list-item a:hover {
+  letter-spacing: 5px;
+  color: #fde3e9;
 }
 
 .header {

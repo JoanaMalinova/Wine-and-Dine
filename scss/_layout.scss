@@ -1,3 +1,69 @@
+.navbar {
+    &-navigation {
+        display: flex;
+
+        &-left {
+            @include navbarStyle;
+            left: 0;
+
+            img {
+                width: 56%;
+                height: 16vw;
+                object-fit: cover;
+                border-radius: 10px;
+                position: absolute;
+                box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
+                -webkit-box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
+                -moz-box-shadow: -11px 13px 16px 4px rgba(0, 0, 0, 0.63);
+                opacity: .8;              
+
+                &.img-1 {
+                    object-fit: fill;
+                    top: 15%;
+                    left: 10%;
+                }
+
+                &.img-2 {
+                    object-position: 50% 90%;
+                    top: 35%;
+                    left: 20%;
+                }
+
+                &.img-3 {
+                    top: 55%;
+                    left: 30%;
+                }
+            }
+        }
+
+        &-right {
+            @include navbarStyle;
+            @include flexLayout;
+            right: 0;
+
+            .nav-list {
+                @include flexLayout;
+                flex-direction: column;
+                gap: 20px;
+                &-item {
+                    a {
+                        color: $color-secondery;
+                        font-size: 38px;
+                        font-family: $font-great-vibes;
+                        letter-spacing: 2px;
+                        transition: all 0.7s;
+
+                        &:hover {
+                            letter-spacing: 5px;
+                            color: $color-primery;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .header {
     width: 100%;
     height: 100vh;
@@ -66,27 +132,27 @@
 
     .brand {
         @include flexLayout;
-        flex-direction: column;       
+        flex-direction: column;
     }
 
-    .media{
-        &-list{
+    .media {
+        &-list {
             @include flexLayout;
             gap: 20px;
 
-            &-item i{
+            &-item i {
                 color: $color-secondery;
                 font-size: 40px;
-                transition: all .7s;
+                transition: all 0.7s;
 
-                &:hover{
+                &:hover {
                     color: $color-primery;
                 }
             }
         }
     }
 
-    .copyright{
+    .copyright {
         color: $color-secondery;
         font-size: 18px;
         font-family: $font-raleway;
