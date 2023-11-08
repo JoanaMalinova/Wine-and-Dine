@@ -84,11 +84,11 @@
 }
 
 .checkbox:checked + .hamburger-menu .menu-line-2 {
-   opacity: 0;
+    opacity: 0;
 }
 
 .checkbox:checked + .hamburger-menu .menu-line-3 {
-   transform: rotate(42deg);
+    transform: rotate(42deg);
 }
 
 .header {
@@ -118,10 +118,20 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 600px) {
+        flex-direction: column;
+        height: unset;
+        padding: 20px 0;
+    }
+
     &-left {
         width: 40%;
         img {
             width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            width: 65%;
         }
     }
 
@@ -133,6 +143,12 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width: 600px) {
+            gap: 20px;
+            width: 90%;
+            padding: 20px 0;
+        }
+
         p {
             width: 80%;
             text-align: justify;
@@ -140,9 +156,14 @@
             font-family: $font-raleway;
             font-style: italic;
             color: $color-primery;
+
             @media (max-width: 1000px) {
                 font-size: 15px;
                 width: 90%;
+            }
+
+            @media (max-width: 700px) {
+                width: 95%;
             }
         }
     }
@@ -175,6 +196,10 @@
                 color: $color-secondery;
                 font-size: 40px;
                 transition: all 0.7s;
+
+                @media (max-width: 700px) {
+                    font-size: 32px;                   
+                }
 
                 &:hover {
                     color: $color-primery;
